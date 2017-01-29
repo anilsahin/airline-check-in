@@ -1,0 +1,30 @@
+@startuml
+skinparam componentStyle uml2
+
+package "AirlineCheckInComponents" {
+
+[CheckInService] - RESTAPI_CheckIn
+database "MongoDB_CIS"{
+        [CheckInServiceDatabase] <- [CheckInService]
+    }
+
+[SeatAvailabilityService] - RESTAPI_SeatAvailability
+database "MongoDB_SAS"{
+        [SeatAvailabilityServiceDatabase] <- [SeatAvailabilityService]
+    }
+
+[PaymentService] - RESTAPI_Payment
+
+[APIGateway] - RESTAPI
+[APIGateway] - RESTAPI_CheckIn
+[APIGateway] - RESTAPI_Payment
+[APIGateway] - RESTAPI_SeatAvailability
+
+
+}
+
+
+
+
+
+@enduml

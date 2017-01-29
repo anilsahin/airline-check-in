@@ -1,0 +1,11 @@
+{
+  "name": "payment_service",
+  "version": "1.0.0",
+  "description": "payment service for airline check in",
+  "main": "index.js",
+  "scripts": {
+    "test": "test_payment"
+  },
+  "author": "anilsahin",
+  "license": "ISC"
+}

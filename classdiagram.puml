@@ -1,0 +1,58 @@
+@startuml
+
+
+package CheckInService{
+    class CheckInManager{
+    -PassengerInformation passenger
+    +initCheckIn(passenger)
+    +requestListOfAvailableSeats()
+    +requestCheckIn()
+    }
+    class PassengerInformation{
+    -int id
+    -String paymentInformation
+    -boolean isCheckedIn
+    -int checkInID
+    }
+}
+
+package SeatAvailabilityService{
+    class SeatAvailabilityManager{
+    +getAvailableSeats()
+    +holdSeat()
+    +releaseSeat()
+    }
+    interface Seat{
+    -int number
+    -String code
+    -int fee
+    -int timer
+    -boolean isOnHold
+    -boolean isReserved
+    }
+    class Aisle{
+    }
+    class Window{
+    }
+    class LegRoom{
+    }
+    class Free{
+    }
+    class PlaneConfiguration{
+    -List<Seat> SeatConfiguration
+    }
+    Seat <|-- Aisle
+    Seat <|-- Window
+    Seat <|-- LegRoom
+    Seat <|-- Free
+}
+
+package PaymentService{
+    class PaymentManager{
+    +requestPaymentInformation()
+    +makePayment()
+    }
+}
+
+
+@enduml

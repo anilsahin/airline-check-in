@@ -1,0 +1,17 @@
+{
+  "name": "airline_checkin",
+  "version": "1.0.0",
+  "description": "Airline Check in application with Microservices",
+  "main": "index.js",
+  "scripts": {
+    "test": "test_check"
+  },
+  "dependencies": {
+    "body-parser": "~1.0.1",
+    "express": "~4.0.0",
+    "mongodb": "^2.2.22",
+    "mongoose": "~4.8"
+  },
+  "author": "anilsahin",
+  "license": "ISC"
+}

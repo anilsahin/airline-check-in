@@ -1,0 +1,17 @@
+{
+  "name": "seat_availability",
+  "version": "1.0.0",
+  "description": "Seat availability service",
+  "main": "index.js",
+  "scripts": {
+    "test": "test_seat"
+  },
+  "dependencies": {
+    "body-parser": "~1.0.1",
+    "express": "~4.0.0",
+    "mongodb": "^2.2.22",
+    "mongoose": "~4.8"
+  },
+  "author": "anilsahin",
+  "license": "ISC"
+}

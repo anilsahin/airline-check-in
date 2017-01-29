@@ -1,0 +1,40 @@
+@startuml
+
+
+title Airline CheckIn Flow
+
+actor Passenger
+
+Passenger --> CheckInService: Request CheckIn
+activate CheckInService
+
+    CheckInService --> SeatAvailabilityService: Request Available Seats
+    activate SeatAvailabilityService
+    CheckInService <-- SeatAvailabilityService: Available Seats Response
+    deactivate SeatAvailabilityService
+
+    CheckInService --> SeatAvailabilityService: Request Hold Seat
+    activate SeatAvailabilityService
+
+        alt fee > 0
+
+        SeatAvailabilityService --> PaymentService: Request Payment
+        activate PaymentService
+
+        PaymentService --> CheckInService: Request Payment Information
+        activate CheckInService
+
+    CheckInService --> PaymentService: Payment Information Response
+    deactivate CheckInService
+
+        PaymentService --> SeatAvailabilityService: Payment Response
+        deactivate PaymentService
+
+        end
+
+        CheckInService <-- SeatAvailabilityService: Hold Seat Response
+        deactivate SeatAvailabilityService
+
+CheckInService --> Passenger: CheckIn Response
+deactivate CheckInService
+@enduml
