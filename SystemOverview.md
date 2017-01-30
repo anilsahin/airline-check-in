@@ -30,3 +30,15 @@ Each of these aggregates make use of a REST API that serves as their interface a
 
 ### Transactions
 Distributed Transactions are handled in order not to require mechanisms such as two-phase commit, but rather as individual transactions that can proceed independently.
+
+### Component Diagram
+
+![alt text](https://github.com/anilsahin/airline-check-in/blob/master/airlinecheckin_classdiagram.png "Component Diagram")
+
+### Class Diagram
+
+![alt text](https://github.com/anilsahin/airline-check-in/blob/master/airlinecheckin_component.png "Class Diagram")
+
+### Sequence Diagram
+
+![alt text](https://github.com/anilsahin/airline-check-in/blob/master/airlinecheckin_sequence.png "Sequence Diagram")
