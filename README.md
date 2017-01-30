@@ -20,3 +20,14 @@ The time of the initial commit which is 29th January 23:34 CET is the state of m
 #### Testing
 - No specific tests have been implemented in the given time.
 - The system behavior was observed using POSTMAN during development.
+
+## Running Locally
+
+These initial instructions are explained for seatAvailability and apply also for AirlineCheckIn.
+
+Run `npm install` in directory seatAvailability to install packages declared in packages.js.
+
+Create a directory called `"data"` in seatAvailability and run `mongod --port <portnumber> --dbpath=data`.
+This will start a MongoDB server running in the given port number.
+
+Run `node server.js` to start SeatAvailabilityService. The server is configured to connect to MongoDB on `port 27018` and runs on `port 8081`. The MongoDB server for AirlineCheckIn is configured to `port 27017` and the Node server runs on `port 8080`.
