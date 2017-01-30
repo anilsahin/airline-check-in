@@ -33,11 +33,11 @@ Distributed Transactions are handled in order not to require mechanisms such as 
 
 ### Component Diagram
 
-![alt text](https://github.com/anilsahin/airline-check-in/blob/master/airlinecheckin_classdiagram.png "Component Diagram")
+![alt text](https://github.com/anilsahin/airline-check-in/blob/master/airlinecheckin_component.png "Component Diagram")
 
 ### Class Diagram
 
-![alt text](https://github.com/anilsahin/airline-check-in/blob/master/airlinecheckin_component.png "Class Diagram")
+![alt text](https://github.com/anilsahin/airline-check-in/blob/master/airlinecheckin_classdiagram.png "Class Diagram")
 
 ### Sequence Diagram
 
