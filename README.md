@@ -4,7 +4,7 @@ The time of the initial commit which is 29th January 23:34 CET is the state of m
 ## Progress
 
 ### System Design
-- System design together with necessary UML Diagrams and a written System Summary are completed and can be found in the code repository.
+- System design together with necessary UML Diagrams and a written System Summary are completed and can be found in [System Overview](https://github.com/anilsahin/airline-check-in/blob/master/SystemOverview.md) file in the code repository.
 
 ### System Implementation
 #### Data Model
